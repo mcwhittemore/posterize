@@ -34,6 +34,7 @@
   "dependencies": {
     "color-difference": "^0.3.4",
     "ndarray": "^1.0.18",
-    "rgb-hex": "^1.0.0"
+    "rgb-hex": "^1.0.0",
+    "rgb-to-int": "^1.0.0"
   }
 }
