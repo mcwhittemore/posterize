@@ -1,8 +1,10 @@
 # Posterize
 
+Quickly make a poster from an ndarray image. Provide your own colors even.
+
 ![](./test/fixtures/obama.png)
-![](./test/fixtures/number.png)
-![](./test/fixtures/sorted_array.png)
+![](./test/fixtures/number.jpg)
+![](./test/fixtures/sorted_array.jpg)
 
 ## Install
 
@@ -18,7 +20,7 @@ var fs = require('fs');
 var posterize = require('posterize');
 
 getPixels('./path-to-image.jpg', function(err, pixels) {
-  var poster = posterize(pixels);
+  var poster = posterize(pixels, 3);
   savePixels(poster, 'jpg').pipe(fs.createWriteStream('./poster.jpg');
 });
 ```
@@ -27,11 +29,11 @@ getPixels('./path-to-image.jpg', function(err, pixels) {
 
 `posterize(pixels, colors, ?sort)`
 
-### pixels
+### pixels (required)
 
 This is an [ndarray](https://github.com/scijs/ndarray) with a shape of `[x, y, 3]` or `[x, y, 4]`. Posterize only works on the rgb channels and clones the alpha channel if present.
 
-### colors
+### colors (required)
 
 This is either a `number` greater than zero or an array of rgb objects. If it is a number `posterize` will create colors based on its color reducing process. If its an array, the length of the array will determine the number of colors and the values will be used when setting the new images pixels.
 
