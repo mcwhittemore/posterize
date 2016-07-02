@@ -1,0 +1,39 @@
+{
+  "name": "posterize",
+  "version": "1.0.0",
+  "description": "make a photo look like a poster",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "clean": "rm ./test/output/*.jpg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mcwhittemore/posterize.git"
+  },
+  "keywords": [
+    "image",
+    "jpg",
+    "png",
+    "ndarray",
+    "poster",
+    "posterization",
+    "posterize"
+  ],
+  "author": "Matthew Chase Whittemore <mcwhittemore@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcwhittemore/posterize/issues"
+  },
+  "homepage": "https://github.com/mcwhittemore/posterize#readme",
+  "devDependencies": {
+    "get-pixels": "^3.3.0",
+    "mocha": "^2.5.3",
+    "save-pixels": "^2.3.3"
+  },
+  "dependencies": {
+    "color-difference": "^0.3.4",
+    "ndarray": "^1.0.18",
+    "rgb-hex": "^1.0.0"
+  }
+}
