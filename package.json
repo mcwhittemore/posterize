@@ -1,6 +1,6 @@
 {
   "name": "posterize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "make a photo look like a poster",
   "main": "index.js",
   "scripts": {
